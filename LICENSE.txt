@@ -1,0 +1,20 @@
+Humulus is licensed under the LGPL 2.1 or the Apache License 2.0:
+
+http://www.apache.org/licenses/LICENSE-2.0.html
+http://www.gnu.org/licenses/lgpl-2.1.txt
+
+Components:
+dom4j (BSD-style license)
+commons-httpclient (Apache License 2.0)
+hibernate-entitymanager (LGPL)
+jaxen (apache style license)
+lucene (Apache License 2.0)
+postgres (postgresql_license)
+xpp3 (bsd-style, University of Indiana license)
+jquery
+jquery-ui
+
+For an overview of the component's licenses, see:
+http://cinnamon-cms.de/cinnamonserver/license
+
+or have a look in doc/all_license.html folder.
