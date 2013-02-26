@@ -1,4 +1,4 @@
-<plugin name='humulus' version='0.7.0' grailsVersion='2.0.0 &gt; *'>
+<plugin name='humulus' version='0.7.1' grailsVersion='2.0.0 &gt; *'>
   <author>Ingo Wiarda @ Horner GmbH</author>
   <authorEmail>ingo.wiarda@horner-project.eu</authorEmail>
   <title>Humulus: essential things for Cinnamon applications</title>
@@ -24,7 +24,6 @@ CinnamonBase, EntityLib, Safran.mini, CinnamonUtils.
   <repositories>
     <repository name='http://grails.org/plugins' url='http://grails.org/plugins' />
     <repository name='grailsCentral' url='http://grails.org/plugins' />
-    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
     <repository name='http://mirrors.ibiblio.org/pub/mirrors/maven2/' url='http://mirrors.ibiblio.org/pub/mirrors/maven2/' />
     <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
   </repositories>
@@ -33,25 +32,21 @@ CinnamonBase, EntityLib, Safran.mini, CinnamonUtils.
       <dependency group='org.hibernate' name='hibernate-entitymanager' version='3.6.10.Final' />
     </compile>
     <runtime>
-      <dependency group='commons-httpclient' name='commons-httpclient' version='3.1' />
-      <dependency group='org.hibernate' name='hibernate-c3p0' version='3.6.10.Final' />
-      <dependency group='jaxen' name='jaxen' version='1.1.4' />
-      <dependency group='org.apache.lucene' name='lucene-core' version='3.6.1' />
-      <dependency group='dom4j' name='dom4j' version='1.6.1' />
       <dependency group='postgresql' name='postgresql' version='9.1-901.jdbc4' />
+      <dependency group='dom4j' name='dom4j' version='1.6.1' />
+      <dependency group='jaxen' name='jaxen' version='1.1.4' />
+      <dependency group='org.hibernate' name='hibernate-c3p0' version='3.6.10.Final' />
+      <dependency group='org.apache.lucene' name='lucene-core' version='3.6.1' />
+      <dependency group='commons-httpclient' name='commons-httpclient' version='3.1' />
     </runtime>
   </dependencies>
   <plugins>
     <compile>
       <plugin group='org.grails.plugins' name='webxml' version='1.4.1' />
+      <plugin group='org.grails.plugins' name='spring-security-core' version='1.2.7.3' />
       <plugin group='org.grails.plugins' name='jquery' version='1.7.1' />
       <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
-      <plugin group='org.grails.plugins' name='hibernate' version='2.1.1' />
-      <plugin group='org.grails.plugins' name='spring-security-core' version='1.2.7.3' />
     </compile>
-    <build>
-      <plugin group='org.grails.plugins' name='release' version='2.0.4' />
-    </build>
   </plugins>
   <runtimePluginRequirements>
     <plugin name='springSecurityCore' version='1.2.7.2 &gt;*' />
