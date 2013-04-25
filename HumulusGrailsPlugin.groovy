@@ -26,7 +26,7 @@ class HumulusGrailsPlugin {
     ]
 
     def author = "Ingo Wiarda @ Horner GmbH"
-    def authorEmail = "ingo.wiarda@horner-project.eu"
+    def authorEmail = "ingo.wiarda@texolution.eu"
     def title = "Humulus: essential things for Cinnamon applications"
     def description = '''\\
 Essential classes and libraries you need to create a Grails based Cinnamon application.
