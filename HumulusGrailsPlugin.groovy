@@ -10,7 +10,7 @@ import eu.hornerproject.humulus.SwitchableDataSource2
 class HumulusGrailsPlugin {
 
     // the plugin version
-    def version = "0.7.1"
+    def version = "0.7.2"
 
     def groupId = 'cinnamon2'
 
