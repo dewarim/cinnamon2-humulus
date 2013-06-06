@@ -1,6 +1,6 @@
-<plugin name='humulus' version='0.7.1' grailsVersion='2.0.0 &gt; *'>
+<plugin name='humulus' version='0.7.3' grailsVersion='2.0.0 &gt; *'>
   <author>Ingo Wiarda @ Horner GmbH</author>
-  <authorEmail>ingo.wiarda@horner-project.eu</authorEmail>
+  <authorEmail>ingo.wiarda@texolution.eu</authorEmail>
   <title>Humulus: essential things for Cinnamon applications</title>
   <description>\
 Essential classes and libraries you need to create a Grails based Cinnamon application.
@@ -32,25 +32,23 @@ CinnamonBase, EntityLib, Safran.mini, CinnamonUtils.
       <dependency group='org.hibernate' name='hibernate-entitymanager' version='3.6.10.Final' />
     </compile>
     <runtime>
-      <dependency group='postgresql' name='postgresql' version='9.1-901.jdbc4' />
-      <dependency group='dom4j' name='dom4j' version='1.6.1' />
-      <dependency group='jaxen' name='jaxen' version='1.1.4' />
       <dependency group='org.hibernate' name='hibernate-c3p0' version='3.6.10.Final' />
-      <dependency group='org.apache.lucene' name='lucene-core' version='3.6.1' />
+      <dependency group='postgresql' name='postgresql' version='9.1-901.jdbc4' />
+      <dependency group='jaxen' name='jaxen' version='1.1.4' />
+      <dependency group='dom4j' name='dom4j' version='1.6.1' />
       <dependency group='commons-httpclient' name='commons-httpclient' version='3.1' />
+      <dependency group='org.apache.lucene' name='lucene-core' version='3.6.1' />
     </runtime>
   </dependencies>
   <plugins>
     <compile>
+      <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
       <plugin group='org.grails.plugins' name='webxml' version='1.4.1' />
       <plugin group='org.grails.plugins' name='spring-security-core' version='1.2.7.3' />
-      <plugin group='org.grails.plugins' name='jquery' version='1.7.1' />
-      <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
     </compile>
   </plugins>
   <runtimePluginRequirements>
     <plugin name='springSecurityCore' version='1.2.7.2 &gt;*' />
-    <plugin name='jquery' version='1.7 &gt;*' />
   </runtimePluginRequirements>
   <behavior />
 </plugin>
