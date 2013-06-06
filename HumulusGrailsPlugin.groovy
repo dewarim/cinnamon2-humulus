@@ -9,18 +9,10 @@ import eu.hornerproject.humulus.SwitchableDataSource2
 
 class HumulusGrailsPlugin {
 
-    // the plugin version
-    def version = "0.7.2"
-
+    def version = "0.7.3"
     def groupId = 'cinnamon2'
-
-    // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0.0 > *"
-    // the other plugins this plugin depends on
-    def dependsOn = [springSecurityCore: '1.2.7.2 >*',
-            jquery: '1.7 >*'
-    ]
-    // resources that are excluded from plugin packaging
+    def dependsOn = [springSecurityCore: '1.2.7.2 >*']
     def pluginExcludes = [
             "grails-app/views/error.gsp"
     ]
